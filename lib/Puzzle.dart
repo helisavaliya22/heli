@@ -31,7 +31,20 @@ class _PuzzleState extends State<Puzzle> {
   }
 
   reset(){
+    h1="5";
+    h2="1";
+    h3="3";
+    h4="6";
+    h5="8";
+    h6="2";
+    h7="4";
+    h8="7";
+    h9="";
+    temp="";
+    w="";
+    setState(() {
 
+    });
   }
   @override
   Widget build(BuildContext context) {
@@ -324,6 +337,15 @@ class _PuzzleState extends State<Puzzle> {
               fontSize: 30,
               fontWeight: FontWeight.bold
             )),
+            ElevatedButton(onPressed: (){
+              reset();
+            }, style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.black,
+            ),child: Text("Reset",style: TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+              fontSize: 30
+            ),)),
           ],
         ),
       );
