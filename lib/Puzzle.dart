@@ -8,13 +8,13 @@ class Puzzle extends StatefulWidget {
 
 class _PuzzleState extends State<Puzzle> {
 
-  String h1="1";
+  String h1="7";
   String h2="2";
-  String h3="3";
-  String h4="4";
-  String h5="5";
-  String h6="6";
-  String h7="7";
+  String h3="4";
+  String h4="6";
+  String h5="1";
+  String h6="3";
+  String h7="5";
   String h8="8";
   String h9="";
   String temp="",w="";
@@ -337,11 +337,11 @@ class _PuzzleState extends State<Puzzle> {
               fontSize: 30,
               fontWeight: FontWeight.bold
             )),
-            ElevatedButton(onPressed: (){
-              reset();
-            }, style: ElevatedButton.styleFrom(
+            ElevatedButton(style: ElevatedButton.styleFrom(
               backgroundColor: Colors.black,
-            ),child: Text("Reset",style: TextStyle(
+            ), onPressed: (){
+              reset();
+            },child: Text("Reset",style: TextStyle(
               fontWeight: FontWeight.bold,
               color: Colors.white,
               fontSize: 30
