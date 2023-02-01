@@ -18,12 +18,14 @@ class _MyHomePageState extends State<MyHomePage> {
       Colors.amber,
       Colors.lightGreenAccent,
       Colors.red,
+      Colors.purpleAccent,
       Colors.blueAccent,
       Colors.pink,
       Colors.teal,
       Colors.amber,
       Colors.lightGreenAccent,
-      Colors.red
+      Colors.red,
+      Colors.deepPurple
     ];
     var arrPages = [
       'BMI',
@@ -36,7 +38,9 @@ class _MyHomePageState extends State<MyHomePage> {
       'Tic-Tac2',
       'Form3',
       'Puzzle',
-      'Image'
+      'Image',
+      'Box',
+      'Call'
     ];
     return Scaffold(
       appBar: AppBar(
@@ -58,10 +62,12 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: () {
                 Navigator.pushNamed(context, arrPages[index]);
               },
-              child: FittedBox(
-                child: Text(
-                  arrPages[index],
-                  style: TextStyle(fontSize: 55, color: Colors.black),
+              child: SingleChildScrollView(
+                child: FittedBox(
+                  child: Text(
+                    arrPages[index],
+                    style: TextStyle(fontSize: 55, color: Colors.black),
+                  ),
                 ),
               ),
             ),

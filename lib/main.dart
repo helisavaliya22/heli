@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:heli/BMI.dart';
+import 'package:heli/Box.dart';
+import 'package:heli/Call.dart';
 import 'package:heli/Form2.dart';
 import 'package:heli/Form3.dart';
 import 'package:heli/Image.dart';
@@ -43,6 +45,8 @@ class _dayState extends State<day> {
         'Form3':(context) => Form3(),
         'Puzzle':(context) => Puzzle(),
         'Image':(context) => MyImage(),
+        'Box':(context) => box(),
+        'Call':(context) => Call(),
       },
       home: MyHomePage(),
       debugShowCheckedModeBanner: false,
