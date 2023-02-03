@@ -236,11 +236,11 @@ class _TicTac2State extends State<TicTac2> {
                           setState(() {
                             if (h4 == "" && w == "") {
                               if (t % 2 == 0) {
-                                h4 = x1;
+                                h4 = 'Z';
                                 X++;
                                 turn = o1;
                               } else {
-                                h4 = o1;
+                                h4 = 'P';
                                 O++;
                                 turn = x1;
                               }

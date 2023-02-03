@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import'package:cupertino_icons/cupertino_icons.dart';
 
 class Call extends StatefulWidget {
   const Call({Key? key}) : super(key: key);
@@ -58,27 +57,37 @@ class _CallState extends State<Call> {
                 shape: BoxShape.circle,
                 image: DecorationImage(
                   image: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjWvhXdCxvGbmaopbgNQn95ahbEnERySC2sg&usqp=CAU"),
-                  fit: BoxFit.fill,
+                  fit: BoxFit.cover,
                 ),
               ),
             ),
+            // CircleAvatar(
+            //   child: ClipOval(
+            //     child: Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjWvhXdCxvGbmaopbgNQn95ahbEnERySC2sg&usqp=CAU",
+            //         width: 170,
+            //         height: 170,
+            //         fit: BoxFit.cover,
+            //     ),
+            //   ),
+            //   radius: 70,
+            // ),
             SizedBox(height: 50),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Icon(Icons.add_ic_call_sharp,size: 50,color: Colors.grey),
-                Icon(Icons.video_call,size: 50,color: Colors.grey),
-                Icon(Icons.bluetooth,size: 50,color: Colors.white),
+                Icon(Icons.add,size: 50,color: Colors.grey),
+                Icon(Icons.videocam,size: 50,color: Colors.grey),
+                Icon(Icons.bluetooth,size: 45,color: Colors.white),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Text("Add call",style: TextStyle(
+                Text("  Add call",style: TextStyle(
                   color: Colors.grey,
                   fontSize: 15
                 )),
-                Text("   Video call",style: TextStyle(
+                Text(" Video call",style: TextStyle(
                     color: Colors.grey,
                     fontSize: 15
                 )),
@@ -93,8 +102,8 @@ class _CallState extends State<Call> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Icon(Icons.volume_up,size: 50,color: Colors.green),
-                Icon(Icons.keyboard_voice,size: 50,color: Colors.grey),
                 Icon(Icons.keyboard_hide,size: 40,color: Colors.white),
+                Icon(Icons.dialpad,size: 40,color: Colors.white),
               ],
             ),
             Row(

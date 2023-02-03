@@ -257,7 +257,7 @@ class _TicTacState extends State<TicTac> {
                               }
                               else
                               {
-                                h4="0";
+                                h4="O";
                                 O++;
                                 turn="X";
                               }
