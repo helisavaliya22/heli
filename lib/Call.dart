@@ -50,27 +50,27 @@ class _CallState extends State<Call> {
                 color: Colors.white
             )),
             SizedBox(height: 10),
-            Container(
-              height: 140,
-              width: 140,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                image: DecorationImage(
-                  image: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjWvhXdCxvGbmaopbgNQn95ahbEnERySC2sg&usqp=CAU"),
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-            // CircleAvatar(
-            //   child: ClipOval(
-            //     child: Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjWvhXdCxvGbmaopbgNQn95ahbEnERySC2sg&usqp=CAU",
-            //         width: 170,
-            //         height: 170,
-            //         fit: BoxFit.cover,
+            // Container(
+            //   height: 140,
+            //   width: 140,
+            //   decoration: BoxDecoration(
+            //     shape: BoxShape.circle,
+            //     image: DecorationImage(
+            //       image: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjWvhXdCxvGbmaopbgNQn95ahbEnERySC2sg&usqp=CAU"),
+            //       fit: BoxFit.cover,
             //     ),
             //   ),
-            //   radius: 70,
             // ),
+            CircleAvatar(
+              child: ClipOval(
+                child: Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjWvhXdCxvGbmaopbgNQn95ahbEnERySC2sg&usqp=CAU",
+                    width: 170,
+                    height: 170,
+                    fit: BoxFit.cover,
+                ),
+              ),
+              radius: 70,
+            ),
             SizedBox(height: 50),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,

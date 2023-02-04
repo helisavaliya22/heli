@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:heli/Form3.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key}) : super(key: key);
@@ -23,6 +22,12 @@ class _MyHomePageState extends State<MyHomePage> {
       Colors.teal,
       Colors.amber,
       Colors.lightGreenAccent,
+      Colors.red,
+      Colors.blueAccent,
+      Colors.pink,
+      Colors.teal,
+      Colors.amber,
+      Colors.lightGreenAccent,
       Colors.red
     ];
     var arrPages = [
@@ -30,13 +35,16 @@ class _MyHomePageState extends State<MyHomePage> {
       'day2',
       'student',
       'form1',
-      'ludo',
       'Form2',
+      'Form3',
       'Tic-Tac',
       'Tic-Tac2',
-      'Form3',
       'Puzzle',
-      'Image'
+      'Image',
+      'Box',
+      'Call',
+      'ludo',
+      'listview'
     ];
     return Scaffold(
       appBar: AppBar(

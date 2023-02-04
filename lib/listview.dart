@@ -16,12 +16,42 @@ class _listviewState extends State<listview> {
         color: Colors.black,
         fontWeight: FontWeight.bold
       ),)),
-      body: ListTile(
-        title: Text("Hello"),
-        subtitle: Text("This is test"),
-        trailing: Icon(Icons.account_circle),
-        leading: Icon(Icons.access_alarm),
-      ),
+      body:
+      // ListTile(
+      //   title: Text("Hello"),
+      //   subtitle: Text("This is test"),
+      //   trailing: Icon(Icons.account_circle),
+      //   leading: Icon(Icons.access_alarm),
+      // ),
+      // ListView(
+      //   children: [
+      //     ListTile(title: Text("Hello")),
+      //     ListTile(title: Text("Hello")),
+      //     ListTile(title: Text("Hello")),
+      //     ListTile(title: Text("Hello")),
+      //     ListTile(title: Text("Hello")),
+      //     ListTile(title: Text("Hello")),
+      //     ListTile(title: Text("Hello")),
+      //     ListTile(title: Text("Hello")),
+      //     ListTile(title: Text("Hello")),
+      //     ListTile(title: Text("Hello")),
+      //     ListTile(title: Text("Hello")),
+      //     ListTile(title: Text("Hello")),
+      //     ListTile(title: Text("Hello")),
+      //     ListTile(title: Text("Hello")),
+      //     ListTile(title: Text("Hello")),
+      //     ListTile(title: Text("Hello")),
+      //     ListTile(title: Text("Hello")),
+      //     ListTile(title: Text("Hello")),
+      //   ],
+      //    // scrollDirection: Axis.vertical,
+      // ),
+      //
+      ListView.separated(itemBuilder: ((context, index) {
+        return Container(width: 100,height: 100,color: Colors.pink);
+      }), separatorBuilder: (context, index) {
+        return Divider(thickness: 3,);
+      }, itemCount: 20)
     );
   }
 }
