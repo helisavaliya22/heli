@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:heli/BMI.dart';
 import 'package:heli/Box.dart';
 import 'package:heli/Call.dart';
+import 'package:heli/Shayari/Category.dart';
 import 'package:heli/Form2.dart';
 import 'package:heli/Form3.dart';
 import 'package:heli/Image.dart';
@@ -11,6 +12,8 @@ import 'package:heli/Tic-Tac.dart';
 import 'package:heli/day2.dart';
 import 'package:heli/form1.dart';
 import 'package:heli/listview.dart';
+import 'package:heli/listview1.dart';
+import 'package:heli/listview2.dart';
 import 'package:heli/ludo.dart';
 import 'package:heli/student.dart';
 
@@ -46,9 +49,12 @@ class _dayState extends State<day> {
         'Form3':(context) => Form3(),
         'Puzzle':(context) => Puzzle(),
         'Image':(context) => MyImage(),
-        'listview':(context) => listview(),
         'Call':(context) => Call(),
-        'Box':(context) => box()
+        'Box':(context) => box(),
+        'listview':(context) => listview(),
+        'listview1':(context) => listview1(),
+        'listview2':(context) => listview2(),
+        'Category':(context) => myapp()
       },
       home: MyHomePage(),
       debugShowCheckedModeBanner: false,

@@ -11,24 +11,44 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     var arrcolors = [
-      Colors.blueAccent,
-      Colors.pink,
-      Colors.teal,
-      Colors.amber,
-      Colors.lightGreenAccent,
+      // Colors.blueAccent,
+      // Colors.pink,
+      // Colors.green,
+      // Colors.amber,
+      // Colors.teal,
+      // Colors.red,
+      // Colors.blueAccent,
+      // Colors.pink,
+      // Colors.green,
+      // Colors.amber,
+      // Colors.teal,
+      // Colors.red,
+      // Colors.blueAccent,
+      // Colors.pink,
+      // Colors.green,
+      // Colors.amber,
+      // Colors.teal,
+      // Colors.red,
       Colors.red,
-      Colors.blueAccent,
-      Colors.pink,
-      Colors.teal,
-      Colors.amber,
-      Colors.lightGreenAccent,
+      Colors.blue,
+      Colors.yellow,
+      Colors.green,
       Colors.red,
-      Colors.blueAccent,
-      Colors.pink,
-      Colors.teal,
-      Colors.amber,
-      Colors.lightGreenAccent,
-      Colors.red
+      Colors.blue,
+      Colors.yellow,
+      Colors.green,
+      Colors.red,
+      Colors.blue,
+      Colors.yellow,
+      Colors.green,
+      Colors.red,
+      Colors.blue,
+      Colors.yellow,
+      Colors.green,
+      Colors.red,
+      Colors.blue,
+      Colors.yellow,
+      Colors.green
     ];
     var arrPages = [
       'BMI',
@@ -44,13 +64,14 @@ class _MyHomePageState extends State<MyHomePage> {
       'Box',
       'Call',
       'ludo',
-      'listview'
+      'listview',
+      'listview1',
+      'listview2',
+      'Category'
     ];
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          "My App",
-          style:
+        title: Text("My App", style:
               TextStyle(color: Colors.black, fontSize: 30, letterSpacing: 0.5),
         ),
         centerTitle: true,
